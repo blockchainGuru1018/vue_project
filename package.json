@@ -27,9 +27,6 @@
     "docs": "vuepress dev",
     "docker": "docker-compose exec dev yarn"
   },
-  "gitHooks": {
-    "pre-commit": "cross-env PRE_COMMIT=true lint-staged"
-  },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "1.2.27",
     "@fortawesome/free-solid-svg-icons": "5.12.1",
