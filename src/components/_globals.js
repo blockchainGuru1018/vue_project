@@ -3,6 +3,7 @@
 // PascalCased version of their file name.
 
 import Vue from 'vue'
+import NavBar from '@components/nav-bar.vue'
 
 // https://webpack.js.org/guides/dependency-management/#require-context
 const requireComponent = require.context(
@@ -34,3 +35,4 @@ requireComponent.keys().forEach((fileName) => {
   // Globally register the component
   Vue.component(componentName, componentConfig.default || componentConfig)
 })
+Vue.component('NavBar', NavBar);
