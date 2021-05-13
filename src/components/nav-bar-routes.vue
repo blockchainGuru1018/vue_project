@@ -28,8 +28,13 @@ export default {
         key={route.name}
         to={route}
         exact-active-class={$style.active}
+        class={$style.navbar}
       >
-        <a>{getRouteTitle(route)}</a>
+        <div class="nav-item-content">
+          <img alt="" src={route.icon} />
+          <span>{getRouteTitle(route)}</span>
+        </div>
+        <img alt="" src="http://iot.flsiot.com:202/pub/images/框架/u77.svg" />
       </BaseLink>
     ))
   },
