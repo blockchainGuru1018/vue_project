@@ -45,6 +45,10 @@ export default {
 
 body {
   background: $color-body-bg;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 #app {
   @extend %typography-small;
