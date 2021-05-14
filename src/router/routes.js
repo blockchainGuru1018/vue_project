@@ -7,6 +7,56 @@ export default [
     component: () => lazyLoadView(import('@views/home.vue')),
   },
   {
+    path: '/场站可视化',
+    name: '场站可视化',
+    component: () => lazyLoadView(import('@layouts/场站可视化.vue')),
+  },
+  {
+    path: '/场站管理',
+    name: '场站管理',
+    component: () => lazyLoadView(import('@layouts/场站管理.vue')),
+  },
+  {
+    path: '/运维人员管理',
+    name: '运维人员管理',
+    component: () => lazyLoadView(import('@layouts/运维.vue')),
+  },
+  {
+    path: '/设备管理',
+    name: '设备管理',
+    component: () => lazyLoadView(import('@layouts/设备管理.vue')),
+  },
+  {
+    path: '/实时报警',
+    name: '实时报警',
+    component: () => lazyLoadView(import('@layouts/实时报警.vue')),
+  },
+  {
+    path: '/历史报警',
+    name: '历史报警',
+    component: () => lazyLoadView(import('@layouts/历史报警.vue')),
+  },
+  {
+    path: '/',
+    name: '角色管理',
+    component: () => lazyLoadView(import('@views/home.vue')),
+  },
+  {
+    path: '/用户管理',
+    name: '用户管理',
+    component: () => lazyLoadView(import('@layouts/用户管理.vue')),
+  },
+  {
+    path: '/',
+    name: '数据字典',
+    component: () => lazyLoadView(import('@views/home.vue')),
+  },
+  {
+    path: '/操作日志',
+    name: '操作日志',
+    component: () => lazyLoadView(import('@layouts/操作日志.vue')),
+  },
+  {
     path: '/login',
     name: 'login',
     component: () => lazyLoadView(import('@views/login.vue')),
