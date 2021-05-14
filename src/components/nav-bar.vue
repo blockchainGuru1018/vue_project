@@ -108,10 +108,12 @@ export default {
 
 <template>
   <ul :class="$style.container">
-    <div style="cursor:pointer;display: flex;justify-content: center;align-items: center;">
-      <img style="width: 30px; height: 30px" id="u69_img" class="img " src="http://iot.flsiot.com:202/pub/images/框架/u68.svg">
-      <p style="font-size: 24px">场站管理</p>
-    </div>
+    <a href="/">
+      <div style="cursor:pointer;display: flex;justify-content: center;align-items: center;">
+        <img style="width: 30px; height: 30px" id="u69_img" class="img " src="http://iot.flsiot.com:202/pub/images/框架/u68.svg">
+        <p style="font-size: 24px">场站管理</p>
+      </div>
+    </a>
     <NavBarRoutes :routes="tab1" />
     <p>场站管理</p>
     <NavBarRoutes :routes="tab2" />
